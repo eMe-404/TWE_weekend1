@@ -1,0 +1,17 @@
+
+input {
+    margin-right: 10px;
+}
+
+.selectionTest li{
+    list-style-type: none;
+}
+
+#headerContainer {
+    display: flex;
+}
+
+#headerContainer > div {
+    margin: 10px;
+}
+
