@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        input{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="h1">统一建模语言理论测试</h1>
+    <form action="" id="headerContainer" class="container-fluid form-inline">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="visible-lg-block">考试科目：统一建模语言</span>
+                <div class="form-group">
+                    <label for="myClass">班级：</label>
+                    <input type="text" class="myClass form-control">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <span class="visible-lg-block">时间：100分钟</span>
+                <div class="form-group">
+                    <label for="stuNumber">学号：</label>
+                    <input type="text" class="stuNumber form-control">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <span class="visible-lg-block">得分：100分</span>
+                <div class="form-group">
+                    <label for="name">姓名：</label>
+                    <input type="text" class="name form-control">
+                </div>
+            </div>
+        </div>
+    </form>
+</header>
+<section>
+    <form action="" class="form-inline">
+        <div id="test1">
+            <h2>一、填空题（每题5分，共20分）</h2>
+            <div class="form-group">
+                <label for="1-1">UNL的中文全称是：</label>
+                <input type="text" class="1-1 form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="1-2">对象最突出的特征是：</label>
+                <input type="text" class="1-2 form-control"><input type="text" class="1-2 form-control"><input
+                    type="text" class="1-2 form-control">
+            </div>
+        </div>
+        <div id="test2">
+            <h2>二、选择题（每题10分，共20分）</h2>
+            <ol>
+                <li>
+                    UML与软件工程的关系是：
+                    <div><input type="radio" name="2-1">(A)UML就是软件工程</div>
+                    <div><input type="radio" name="2-1">(B)UNL参与到软件工程中软件开发过程的几个阶段</div>
+                    <div><input type="radio" name="2-1">(C)UNL与软件工程无关</div>
+                    <div><input type="radio" name="2-1">(D)UML是软件工程的一部分</div>
+                </li>
+                <li>
+                    Java语言支持：
+                    <div><input type="radio" name="2-2">(A)单继承</div>
+                    <div><input type="radio" name="2-2">(B)多继承</div>
+                    <div><input type="radio" name="2-2">(C)单继承和多继承都支持</div>
+                    <div><input type="radio" name="2-2">(D)单继承和多继承都不支持</div>
+                </li>
+            </ol>
+        </div>
+        <div id="test3">
+            <h2>三、多选题（每题10分，共20分）</h2>
+            <ol>
+                <li>
+                    用例的力度分为以下哪三种：
+                    <div><input type="checkbox" name="3-1">(A)概述级</div>
+                    <div><input type="checkbox" name="3-1">(B)需求级</div>
+                    <div><input type="checkbox" name="3-1">(C)用户目标级</div>
+                    <div><input type="checkbox" name="3-1">(D)子功能机</div>
+                </li>
+                <li>
+                    类图由以下哪三种部分组成：
+                    <div><input type="checkbox" name="3-2">(A)名称(Name)</div>
+                    <div><input type="checkbox" name="3-2">(B)属性(Attribute)</div>
+                    <div><input type="checkbox" name="3-2">(C)操作(Operation)</div>
+                    <div><input type="checkbox" name="3-2">(D)方法(Function)</div>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h2>四、判断题（每题10分，共20分）</h2>
+            <ol>
+                <li>
+                    用力图只是用于和客户交流和沟通的，用于确定需求。
+                    <input type="radio" name="4-1">√
+                    <input type="radio" name="4-1">×
+                </li>
+                <li>
+                    在状态图中，终止状态在一个状态图中允许有任意多个。
+                    <input type="radio" name="4-2">√
+                    <input type="radio" name="4-2">×
+
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h2>五、简答题（每题20分，共20分）</h2>
+            <ol>
+                <li>
+                    简述什么事模型以及模型的表现形式？
+                    <br>
+                    <textarea cols="100" rows="10" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias culpa cumque dignissimos dolorum ducimus enim exercitationem expedita itaque neque porro quod repellat, voluptatem? Accusantium consequatur fugiat impedit sequi, unde voluptas.</textarea>
+                </li>
+            </ol>
+            <button type="button" class="btn btn-success">计算分数</button>
+        </div>
+    </form>
+</section>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
